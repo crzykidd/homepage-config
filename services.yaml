@@ -1,0 +1,115 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/en/configs/services
+
+- Network:
+    - Pihole-01:
+        icon: pi-hole.png
+        href: http://pihole-01.home.arpa/
+        description: Primary PiHole Server
+        widget:
+          type: pihole
+          url: http://pihole-01.home.arpa/
+          key: {{HOMEPAGE_VAR_PIHOLE_API}}
+    - Pihole-02:
+        icon: pi-hole.png
+        href: http://pihole-02.home.arpa/
+        description: Secondary PiHole Server
+        widget:
+          type: pihole
+          url: http://pihole-02.home.arpa/
+          key: {{HOMEPAGE_VAR_PIHOLE_API}}
+    - Portainer:
+        icon: portainer.png
+        href: http://portainer.home.arpa
+        description: Portainer k3s cluster
+        widget:
+          type: portainer
+          url: http://portainer.home.arpa
+          env: 1
+          key: ptr_Lx2Z72L5AEEd8WOQldc1POrWtgETKGhulY65U2zOwlk=
+
+- Storage:
+    - tnas01:
+        icon: truenas.png
+        href: https://tnas01.home.arpa
+        widget:
+          type: truenas
+          url: https://tnas01.home.arpa
+          username: {{HOMEPAGE_VAR_TNAS01_USERNAME}}
+          password: {{HOMEPAGE_VAR_TNAS01_PASSWORD}}
+- Archive Media Apps:
+    - Sonarr - Archive:
+        icon: sonarr.png
+        href: http://sonarr.home.arpa
+        widget:
+          type: sonarr
+          fields: ["wanted", "queued", "series"]
+          url: http://sonarr.home.arpa
+          key: {{HOMEPAGE_VAR_SONARR_API}}
+          #enableQueue: true
+    - Radarr - Archive:
+        icon: radarr.png
+        href: http://radarr.home.arpa
+        widget:
+          type: radarr
+          fields: ["wanted", "queued", "movies"]
+          url: http://radarr.home.arpa
+          key: {{HOMEPAGE_VAR_RADARR_API}}
+          enableQueue: true
+    - Prowlarr - Archive:
+        icon: prowlarr.png
+        href: http://prowlarr.home.arpa
+        widget:
+          type: prowlarr
+          fields: ["numberOfGrabs", "numberOfQueries", "numberOfFailGrabs"]
+          url: http://prowlarr.home.arpa
+          key: {{HOMEPAGE_VAR_PROWLARR_API}}
+    - Plex - Archive:
+        icon: plex.png
+        href: https://plex.tv
+        widget:
+          type: plex
+          url: http://plexserver01.home.arpa:32400
+          key: {{HOMEPAGE_VAR_PLEX_TOKEN}}
+    - OMBI - Archive:
+        icon: ombi.png
+        href: http://ombi.home.arpa:3579
+        widget:
+          type: ombi
+          url: http://ombi.home.arpa:3579
+          key: {{HOMEPAGE_VAR_OMBI_API}}
+    - Overseerr - Archive:
+        icon: overseerr.png
+        href: http://overseerr.home.arpa  
+        widget:
+          type: overseerr
+          url: http://overseerr.home.arpa
+          key: {{HOMEPAGE_VAR_OVERSEER_API}}
+    - ruTorrent - Luna:
+        icon: rutorrent.png
+        href: https://crzykidd.luna.usbx.me/rutorrent/ 
+        widget:
+          type: rutorrent
+          url: https://crzykidd.luna.usbx.me/rutorrent/
+          username: {{HOMEPAGE_VAR_RUTORRENT_USER}}
+          password: {{HOMEPAGE_VAR_RUTORRENT_PASSWORD}}
+    - Cloudflared:
+        icon: cloudflare.png
+        href: https://dash.cloudflare.com/
+        widget:
+          type: cloudflared
+          accountid: {{HOMEPAGE_VAR_CLOUDFLARE_ACCOUNTID}}
+          tunnelid: {{HOMEPAGE_VAR_CLOUDFLARE_TUNNELID}}
+          key: {{HOMEPAGE_VAR_CLOUDFLARE_API_TOKEN}}
+
+    
+- Home Automation/Reporting:
+    - grafana:
+        icon: grafana.png
+        href: http://docker10:3001/
+        widget:
+          type: grafana
+          url: http://docker10:3001/
+          username: {{HOMEPAGE_VAR_GRAFANA_USERNAME}}
+          password: {{HOMEPAGE_VAR_GRAFANA_PASSWORD}}

@@ -1,0 +1,19 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/en/configs/settings
+
+title: CrzyNet Home
+fiveColumns: true
+providers:
+  openweathermap: openweathermapapikey
+  weatherapi: weatherapiapikey
+  longhorn:
+    url: http://longhorn.home.arpa
+
+layout:
+  Network:
+    style: row
+    columns: 5
+  Archive Media Apps:
+    style: row
+    columns: 5
