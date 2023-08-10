@@ -5,7 +5,7 @@
 - Network:
     - Pihole-01:
         icon: pi-hole.png
-        href: http://pihole-01.home.arpa/
+        href: http://pihole-01.home.arpa/admin
         description: Primary PiHole Server
         widget:
           type: pihole
@@ -13,7 +13,7 @@
           key: {{HOMEPAGE_VAR_PIHOLE_API}}
     - Pihole-02:
         icon: pi-hole.png
-        href: http://pihole-02.home.arpa/
+        href: http://pihole-02.home.arpa/admin
         description: Secondary PiHole Server
         widget:
           type: pihole
