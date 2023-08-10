@@ -23,11 +23,12 @@
         icon: portainer.png
         href: http://portainer.home.arpa
         description: Portainer k3s cluster
-        widget:
-          type: portainer
-          url: http://portainer.home.arpa
-          env: 1
-          key: ptr_Lx2Z72L5AEEd8WOQldc1POrWtgETKGhulY65U2zOwlk=
+        #Widget is broken in Portainer 2 with K8s
+        #widget:
+        #  type: portainer
+        #  url: http://portainer.home.arpa
+        #  env: 1
+        #  key: {{HOMEPAGE_VAR_PORTAINER_K3S_API}}
 
 - Storage:
     - tnas01:
@@ -38,6 +39,23 @@
           url: https://tnas01.home.arpa
           username: {{HOMEPAGE_VAR_TNAS01_USERNAME}}
           password: {{HOMEPAGE_VAR_TNAS01_PASSWORD}}
+
+    - FS01 - SSD:
+        icon: synology.png
+        href: httpss://fs01.home.arpa:5001
+        widget:
+          type: diskstation
+          url: https://fs01.home.arpa:5001
+          username: {{HOMEPAGE_VAR_FS02_USERNAME}}
+          password: {{HOMEPAGE_VAR_FS02_PASSWORD}}
+    - FS02 - Spindle:
+        icon: synology.png
+        href: https://fs02.home.arpa:5000
+        widget:
+          type: diskstation
+          url: http://fs02.home.arpa:5000
+          username: {{HOMEPAGE_VAR_FS02_USERNAME}}
+          password: {{HOMEPAGE_VAR_FS02_PASSWORD}}
 - Archive Media Apps:
     - Sonarr - Archive:
         icon: sonarr.png
@@ -113,3 +131,34 @@
           url: http://docker10:3001/
           username: {{HOMEPAGE_VAR_GRAFANA_USERNAME}}
           password: {{HOMEPAGE_VAR_GRAFANA_PASSWORD}}
+
+- K8s Tools:
+    - Traefik - k3s-01:
+        icon: traefik.png
+        href: http://traefik.home.arpa
+        widget:
+            type: traefik
+            url: http://traefik.home.arpa
+    - Sysdig Monitor:
+        icon: https://sysdig.jp/wp-content/uploads/icon-dashboard.svg
+        href: https://us2.app.sysdig.com/#/overview/
+    - Longhorn Dashboard:
+        icon: longhorn.png
+        href: http://longhorn.home.arpa
+    - Keel Dashboard:
+        icon: kubernetes.png
+        href: http://keel.home.arpa
+
+- IPMI:
+    - docker10 IPMI:
+        icon: supermicro.png
+        href: http://192.168.51.240
+    - pve01-IPMI:
+        icon: supermicro.png
+        href: http://192.168.51.241
+    - pvenas01-IPMI:
+        icon: supermicro.png
+        href: http://192.168.51.242
+    - pvenas02-IPMI:
+        icon: hp.png
+        href: http://192.168.51.243
