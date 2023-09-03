@@ -50,10 +50,10 @@
           password: {{HOMEPAGE_VAR_FS02_PASSWORD}}
     - FS02 - Spindle:
         icon: synology.png
-        href: https://fs02.home.arpa:5000
+        href: https://fs02.home.arpa:5001
         widget:
           type: diskstation
-          url: http://fs02.home.arpa:5000
+          url: https://fs02.home.arpa:5001
           username: {{HOMEPAGE_VAR_FS02_USERNAME}}
           password: {{HOMEPAGE_VAR_FS02_PASSWORD}}
 - Archive Media Apps:
@@ -92,10 +92,10 @@
           key: {{HOMEPAGE_VAR_PLEX_TOKEN}}
     - OMBI - Archive:
         icon: ombi.png
-        href: http://ombi.home.arpa:3579
+        href: http://ombi.home.arpa
         widget:
           type: ombi
-          url: http://ombi.home.arpa:3579
+          url: http://ombi.home.arpa
           key: {{HOMEPAGE_VAR_OMBI_API}}
     - Overseerr - Archive:
         icon: overseerr.png
