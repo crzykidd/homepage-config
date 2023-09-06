@@ -120,7 +120,12 @@
           accountid: {{HOMEPAGE_VAR_CLOUDFLARE_ACCOUNTID}}
           tunnelid: {{HOMEPAGE_VAR_CLOUDFLARE_TUNNELID}}
           key: {{HOMEPAGE_VAR_CLOUDFLARE_API_TOKEN}}
-
+    - Syncthing:
+        icon: syncthing.png
+        href: http://syncthing01.home.arpa/
+        #widget:
+        #  type: strelaysrv
+        #  url: http://syncthing01.home.arpa:8384
     
 - Home Automation/Reporting:
     - grafana:
@@ -131,6 +136,9 @@
           url: http://docker10:3001/
           username: {{HOMEPAGE_VAR_GRAFANA_USERNAME}}
           password: {{HOMEPAGE_VAR_GRAFANA_PASSWORD}}
+    - zwave-js-ui:
+        icon: zwavejsui.png
+        href: https://zwavejsui.home.arpa:8091/
 
 - K8s Tools:
     - Traefik - k3s-01:
