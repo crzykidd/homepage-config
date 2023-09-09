@@ -11,9 +11,9 @@ providers:
     url: http://longhorn.home.arpa
 
 layout:
-  Network:
-    style: row
-    columns: 5
+#  Network:
+#    style: column
+#    columns: 5
   Archive Media Apps:
     style: row
     columns: 5
