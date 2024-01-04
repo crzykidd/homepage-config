@@ -60,10 +60,10 @@
 - Home Automation/Reporting:
     - grafana:
         icon: grafana.png
-        href: http://docker10:3001/
+        href: http://grafana.home.arpa/
         widget:
           type: grafana
-          url: http://docker10:3001/
+          url: http://grafana.home.arpa/
           username: {{HOMEPAGE_VAR_GRAFANA_USERNAME}}
           password: {{HOMEPAGE_VAR_GRAFANA_PASSWORD}}
     - zwave-js-ui:
