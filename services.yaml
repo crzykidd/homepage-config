@@ -73,6 +73,13 @@
         icon: phpmyadmin.png
         href: http://phpmyadmin.home.arpa/
 
+- Solar Info:
+    - Solar-Assistant:
+        icon: solar.png
+        href: http://solar-assistant.home.arpa/
+    - EG4 Monitor:
+        icon: solar.png
+        href: https://monitor.eg4electronics.com/WManage/web/monitor/inverter      
 - K8s Tools:
     - Traefik - k3s-01:
         icon: traefik.png
