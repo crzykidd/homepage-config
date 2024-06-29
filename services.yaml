@@ -195,5 +195,8 @@
 
 - 3D Printing:
     - Spoolman:
-        icon: supermicro.png
+        icon: spoolman.png
         href: https://spoolman.crzynet.com
+    - Octoprint:
+        icon: octoprint.png
+        href: http://octoprint/#control
