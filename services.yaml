@@ -75,7 +75,7 @@
     - Kavita:
         icon: kavita.png
         href: http://kavita.home.arpa/home/
-        
+
 - Servers:
     - PVE01: 
        icon: proxmox.png
@@ -137,6 +137,9 @@
           password: {{HOMEPAGE_VAR_FS02_PASSWORD}}
     
 - Home Automation/Reporting:
+    - nodered:
+        icon: node-red.png
+        href: http://nodered.home.arpa/
     - grafana:
         icon: grafana.png
         href: http://grafana.home.arpa/
@@ -162,7 +165,7 @@
 - K8s Tools:
     - Traefik - k3s-01:
         icon: traefik.png
-        href: http://traefik.home.arpa
+        href: http://traefik.home.arpa/dashboard/
         widget:
             type: traefik
             url: http://traefik.home.arpa
