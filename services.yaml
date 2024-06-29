@@ -81,6 +81,10 @@
        icon: proxmox.png
        description: PVE 01 Server
        href: https://pve01.home.arpa:8006/
+    - PVENAS01: 
+       icon: proxmox.png
+       description: PVENAS 01 Server
+       href: https://pvenas01.home.arpa:8006/
 - Network:
     - Pihole-01:
         icon: pi-hole.png
