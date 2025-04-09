@@ -5,29 +5,29 @@
 - Archive Media Apps:
     - Sonarr - Archive:
         icon: sonarr.png
-        href: http://sonarr.home.arpa
+        href: https://sonarr.crzynet.com
         widget:
           type: sonarr
           fields: ["wanted", "queued", "series"]
-          url: http://sonarr.home.arpa
+          url: https://sonarr.crzynet.com
           key: {{HOMEPAGE_VAR_SONARR_API}}
           #enableQueue: true
     - Radarr - Archive:
         icon: radarr.png
-        href: http://radarr.home.arpa
+        href: https://radarr.crzynet.com
         widget:
           type: radarr
           fields: ["wanted", "queued", "movies"]
-          url: http://radarr.home.arpa
+          url: https://radarr.crzynet.com
           key: {{HOMEPAGE_VAR_RADARR_API}}
           enableQueue: true
     - Prowlarr - Archive:
         icon: prowlarr.png
-        href: http://prowlarr.home.arpa
+        href: https://prowlarr.crzynet.com
         widget:
           type: prowlarr
           fields: ["numberOfGrabs", "numberOfQueries", "numberOfFailGrabs"]
-          url: http://prowlarr.home.arpa
+          url: https://prowlarr.crzynet.com
           key: {{HOMEPAGE_VAR_PROWLARR_API}}
     - Plex - Archive:
         icon: plex.png
@@ -68,7 +68,7 @@
           key: {{HOMEPAGE_VAR_CLOUDFLARE_API_TOKEN}}
     - Syncthing:
         icon: syncthing.png
-        href: http://syncthing01.home.arpa/
+        href: https://syncthing.crzynet.com/
         #widget:
         #  type: strelaysrv
         #  url: http://syncthing01.home.arpa:8384
@@ -81,10 +81,18 @@
        icon: proxmox.png
        description: PVE 01 Server
        href: https://pve01.home.arpa:8006/
+    - PVE02: 
+        icon: proxmox.png
+        description: PVE 01 Server
+        href: https://pve02.home.arpa:8006/
     - PVENAS01: 
        icon: proxmox.png
        description: PVENAS 01 Server
        href: https://pvenas01.home.arpa:8006/
+    - PBS: 
+        icon: proxmox.png
+        description: ProxMox Backup Server
+        href: https://pbs.home.arpa:8007/
 - Network:
     - Pihole-01:
         icon: pi-hole.png
@@ -102,7 +110,7 @@
           type: pihole
           url: http://pihole-02.home.arpa/
           key: {{HOMEPAGE_VAR_PIHOLE_API}}
-    - Portainer:
+    - Portainer-k3s:
         icon: portainer.png
         href: http://portainer.home.arpa
         description: Portainer k3s cluster
@@ -112,6 +120,22 @@
         #  url: http://portainer.home.arpa
         #  env: 1
         #  key: {{HOMEPAGE_VAR_PORTAINER_K3S_API}}
+
+    - Portainer-docker40:
+        icon: portainer.png
+        href: http://portainer.crzynet.com
+        description: Portainer Docker40 environemnt
+        # Widget is broken in Portainer 2 with K8s
+        widget:
+          type: portainer
+          url: https://portainer.crzynet.com
+          env: 2
+          key: {{HOMEPAGE_VAR_PORTAINER_40}}
+    - Komodo-docker50:
+        icon: komodo.png
+        href: https://komodo.crzynet.com
+        description: Komodo Docker Manger
+
 
 - Storage:
     - tnas01:
@@ -143,7 +167,7 @@
 - Home Automation/Reporting:
     - nodered:
         icon: node-red.png
-        href: http://nodered.home.arpa/
+        href: http://nodered.crzynet.com/
     - grafana:
         icon: grafana.png
         href: http://grafana.home.arpa/
@@ -201,6 +225,17 @@
     - Spoolman:
         icon: spoolman.png
         href: https://spoolman.crzynet.com
+#        widget:
+#            type: spoolman
+#            url: https://spoolman.crzynet.com
     - Octoprint:
         icon: octoprint.png
         href: http://octoprint/#control
+        widget:
+            type: octoprint
+            url: http://octoprint.home.arpa
+            key: {{HOMEPAGE_VAR_OCTOPRINT_KEY}}
+    - Manyfold:
+        icon: manyfold.png
+        href: https://manyfold.crzynet.com
+
