@@ -230,11 +230,11 @@
 #            url: https://spoolman.crzynet.com
     - Octoprint:
         icon: octoprint.png
-        href: http://octoprint/#control
+        href: http://octopi.home.arpa/#control
         widget:
             type: octoprint
-            url: http://octoprint.home.arpa
-            key: {{HOMEPAGE_VAR_OCTOPRINT_KEY}}
+            url: http://octopi.home.arpa
+            key: {{HOMEPAGE_VAR_OCTOPI_KEY}}
     - Manyfold:
         icon: manyfold.png
         href: https://manyfold.crzynet.com
